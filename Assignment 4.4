@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Click Event Example</h3>
+
+<p id="myParagraph">This is the original text.</p>
+<button id="myButton">Click Me</button>
+
+<script>
+    // Select button and paragraph
+    const button = document.getElementById("myButton");
+    const paragraph = document.getElementById("myParagraph");
+
+    // Add click event
+    button.addEventListener("click", () => {
+        paragraph.innerText = "The text has been changed!";
+    });
+</script>
+
+</body>
+</html>
